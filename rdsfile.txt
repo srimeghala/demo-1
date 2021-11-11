@@ -1,0 +1,71 @@
+1) how to install client?
+
+apt-get install mysql-client
+
+-----------------------------------
+2) url
+
+ mysql -h database-1.ceqong58g3w2.us-east-1.rds.amazonaws.com --port 3306 -u admin -p
+
+------------------------------------------------------------------------------------------------------------------
+3) password:admin1234
+
+--------------------------------------------------------------------------
+4) 1.create database mydb;
+
+   2. use mydb;
+
+   3.show databases;
+
+   4.show tables;
+
+---------------------------------------------------------------------------------------------------
+
+   create table emp(eid int primary key,ename varchar(25),address varchar(50));
+
+   desc emp;
+
+    insert into emp values(1,"james","USA");
+
+     insert into emp values(2,"jack","USA");
+
+     insert into emp values(3,"smith","USA");
+
+    select *from emp;
+----------------------------------------------------------------------------------------------------
+5) from testing purpose?
+
+   update:
+   
+  1.update emp set ename="jackson",address="AUS" where eid=2;
+  
+  2.select *from emp;
+----------------------------------------------------------------------------------------------------
+   select *from emp where eid=2;
+ 
+   select ename,address from emp;
+---------------------------------------------------------------------------------------------------------
+
+   delete:
+     
+  delete from emp where eid=3;
+   
+  delete from emp;
+
+--------------------------------------------------------------------------------------------------------------
+
+drop: 
+     drop table emp;
+ 
+     drop database mydb;
+
+----------------------------------------------------------------------------------------------------------
+
+6)  sudo yum install -y https://dev.mysql.com/get/mysql57-community-release-e17-11.noarch.rpm
+
+    sudo yum install
+
+   
+
+ mysql -h database-1.cnfp7bhzh8up.us-east-2.rds.amazonaws.com --port 3306 -u admin -p
+
